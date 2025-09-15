@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar-var"></div>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Mi Carrito</h2>
+        <div id="cart-container"></div>
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <span id="total-price" class="fw-bold fs-5"></span>
+            <button id="checkout-btn" class="btn btn-primary" style="display:none;">Ir a pagar</button>
+        </div>
+    </div>
+
+    <div id="footer-render"></div>
+
+    <script src="/assets/js/navRender.js"></script>
+    <script src="/assets/js/footerRender.js"></script>
+    <script src="/assets/js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/style/login.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div id="navbar-var"></div>
+
+  <!-- LOGIN FORM -->
+  <div class="container mt-5">
+    <h2 class="text-center">Iniciar Sesión</h2>
+    <form id="loginForm" class="mx-auto mt-4" style="max-width: 400px;">
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" id="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" id="password" class="form-control" required />
+      </div>
+      <button type="submit" class="btn btn-success w-100">Entrar</button>
+    </form>
+    <p class="text-center mt-3">
+      ¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer-render"></div>
+
+  <!-- SCRIPTS -->
+  <script src="/assets/js/navRender.js"></script>
+  <script src="/assets/js/footerRender.js"></script>
+  <script src="/assets/js/login.js"></script>
+</body>
+
+</html>

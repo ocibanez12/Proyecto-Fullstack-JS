@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<!-- LA FINALIDAD DE ESTO ES PODER RECOPILAR DATOS PARA GENERAR DATOS DE LA VENTA JUNTO A LA DIRECCION Y CREAR BOLETA -->
+
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar-var"></div>
+    <div class="container mt-5">
+        <h2>Datos de envío</h2>
+        <form id="checkout-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="city" required>
+            </div>
+
+            <h2>Método de pago</h2>
+            <div class="mb-3">
+                <select class="form-select" id="payment-method" required>
+                    <option value="" disabled selected>Selecciona un método de pago</option>
+                    <option value="credit">Tarjeta de crédito</option>
+                    <option value="debit">Tarjeta de débito</option>
+                    <option value="transfer">Transferencia bancaria</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-success">Finalizar Compra</button>
+        </form>
+        <!-- FOOTER -->
+        <div id="footer-render"></div>
+    </div>
+
+    <script src="/assets/js/chekout.js"></script>
+    <script src="/assets/js/footerRender.js"></script>
+    <script src="/assets/js/navRender.js"></script>
+
+</body>
+
+</html>

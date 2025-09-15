@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Zapatillas Deportivas",
+        "price": 75000,
+        "tipo": "calzado",
+        "img": "/assets/img/Zapatillas_Tensaur_Sport_Training_Cierre_de_Cordones_Blanco_GW6422_01_standard.avif",
+        "description": "Zapatillas cómodas y resistentes para todo tipo de entrenamiento."
+    },
+    {
+        "id": 2,
+        "name": "Polera Casual",
+        "price": 20000,
+        "tipo": "polera",
+        "img": "/assets/img/images (1).jpg",
+        "description": "Polera casual de algodón, perfecta para el día a día."
+    },
+    {
+        "id": 3,
+        "name": "Chaqueta de Invierno",
+        "price": 95000,
+        "tipo": "chaqueta",
+        "img": "/assets/img/images.jpg",
+        "description": "Chaqueta cálida e impermeable para los días fríos."
+    }
+]
